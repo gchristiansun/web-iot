@@ -2,7 +2,7 @@ const endPoint = "http://192.168.171.137"
 
 
 function getDapurLed() {
-    fetch(endPoint + "/dapur", {
+    fetch("/api/dapur", {
         method: "GET"
     }).then(response => response.text()).then(result => {
         if(result == "ON") {
@@ -18,7 +18,7 @@ function getDapurLed() {
 }
 
 function getTamuLed() {
-    fetch(endPoint + "/tamu", {
+    fetch("/api/tamu", {
         method: "GET"
     }).then(response => response.text()).then(result => {
         if(result == "ON") {
@@ -34,7 +34,7 @@ function getTamuLed() {
 }
 
 function getMakanLed() {
-    fetch(endPoint + "/makan", {
+    fetch("/api/makan", {
         method: "GET"
     }).then(response => response.text()).then(result => {
         if(result == "ON") {
