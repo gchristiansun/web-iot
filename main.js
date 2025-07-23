@@ -50,19 +50,19 @@ function getMakanLed() {
 }
 
 function setDapurLed() {
-    fetch(endPoint + "/dapur", {
+    fetch("/api/dapur", {
         method: "POST"
     }).then(response => response.text()).then(() => getDapurLed());
 }
 
 function setTamuLed() {
-    fetch(endPoint + "/tamu", {
+    fetch("/api/tamu", {
         method: "POST"
     }).then(response => response.text()).then(() => getTamuLed());
 }
 
 function setMakanLed() {
-    fetch(endPoint + "/makan", {
+    fetch("/api/makan", {
         method: "POST"
     }).then(response => response.text()).then(() => getMakanLed());
 }
