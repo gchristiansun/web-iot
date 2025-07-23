@@ -1,6 +1,9 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
-    { "source": "/led", "destination": "/led.html" }
+    { "source": "/led", "destination": "/led.html" },
+    { "source": "/dapur", "destination": "/api/dapur.js" },
+    { "source": "/makan", "destination": "/api/makan.js" },
+    { "source": "/tamu", "destination": "/api/tamu.js" }
   ]
 }

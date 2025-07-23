@@ -8,11 +8,11 @@ function getDapurLed() {
         if(result == "ON") {
             ledDapur.style.backgroundColor = "blue"
             ledDapur.innerText = "TURN OFF"
-            dapurLedImg.src = "./img/led-on.png"
+            dapurLedImg.src = "/img/led-on.png"
         } else {
             ledDapur.style.backgroundColor = "#579fff"
             ledDapur.innerText = "TURN ON"
-            dapurLedImg.src = "./img/led-off.png"
+            dapurLedImg.src = "/img/led-off.png"
         }
     })   
 }
@@ -24,11 +24,11 @@ function getTamuLed() {
         if(result == "ON") {
             ledTamu.style.backgroundColor = "blue"
             ledTamu.innerText = "TURN OFF"
-            tamuLedImg.src = "./img/led-on.png"
+            tamuLedImg.src = "/img/led-on.png"
         } else {
             ledTamu.style.backgroundColor = "#579fff"
             ledTamu.innerText = "TURN ON"
-            tamuLedImg.src = "./img/led-off.png"
+            tamuLedImg.src = "/img/led-off.png"
         }
     })   
 }
@@ -40,11 +40,11 @@ function getMakanLed() {
         if(result == "ON") {
             ledMakan.style.backgroundColor = "blue"
             ledMakan.innerText = "TURN OFF"
-            makanLedImg.src = "./img/led-on.png"
+            makanLedImg.src = "/img/led-on.png"
         } else {
             ledMakan.style.backgroundColor = "#579fff"
             ledMakan.innerText = "TURN ON"
-            makanLedImg.src = "./img/led-off.png"
+            makanLedImg.src = "/img/led-off.png"
         }
     })   
 }
