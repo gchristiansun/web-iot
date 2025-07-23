@@ -2,7 +2,7 @@ const endPoint = "http://192.168.171.137"
 
 
 function getDapurLed() {
-    fetch("/api/dapur", {
+    fetch("https://web-iot-vert.vercel.app/api/dapur", {
         method: "GET"
     }).then(response => response.text()).then(result => {
         if(result == "ON") {
@@ -18,7 +18,7 @@ function getDapurLed() {
 }
 
 function getTamuLed() {
-    fetch("/api/tamu", {
+    fetch("https://web-iot-vert.vercel.app/api/tamu", {
         method: "GET"
     }).then(response => response.text()).then(result => {
         if(result == "ON") {
@@ -34,7 +34,7 @@ function getTamuLed() {
 }
 
 function getMakanLed() {
-    fetch("/api/makan", {
+    fetch("https://web-iot-vert.vercel.app/api/makan", {
         method: "GET"
     }).then(response => response.text()).then(result => {
         if(result == "ON") {
@@ -50,19 +50,19 @@ function getMakanLed() {
 }
 
 function setDapurLed() {
-    fetch("/api/dapur", {
+    fetch("https://web-iot-vert.vercel.app/api/dapur", {
         method: "POST"
     }).then(response => response.text()).then(() => getDapurLed());
 }
 
 function setTamuLed() {
-    fetch("/api/tamu", {
+    fetch("https://web-iot-vert.vercel.app/api/tamu", {
         method: "POST"
     }).then(response => response.text()).then(() => getTamuLed());
 }
 
 function setMakanLed() {
-    fetch("/api/makan", {
+    fetch("https://web-iot-vert.vercel.app/api/makan", {
         method: "POST"
     }).then(response => response.text()).then(() => getMakanLed());
 }
