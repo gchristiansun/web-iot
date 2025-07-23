@@ -2,10 +2,17 @@
   "version": 2,
   "builds": [
     { "src": "api/**/*.js", "use": "@vercel/node" },
-    { "src": "led.html", "use": "@vercel/static" }
+    { "src": "root/led.html", "use": "@vercel/static" },
+    { "src": "root/index.html", "use": "@vercel/static" },
+    { "src": "style.css", "use": "@vercel/static" },
+    { "src": "main.js", "use": "@vercel/static" },
+    { "src": "img/**", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1.js" },
-    { "src": "/", "dest": "/led.html" }
+    { "src": "/api/(.*)", "dest": "api/$1.js" },
+    { "src": "/style.css", "dest": "/style.css" },
+    { "src": "/main.js", "dest": "/main.js" },
+    { "src": "/img/(.*)", "dest": "/img/$1" },
+    { "src": "/", "dest": "/root/led.html" }
   ]
 }
